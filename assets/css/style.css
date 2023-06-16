@@ -47,7 +47,20 @@ section{
 }
 .grid-items{
     display: grid;
+    /* en busqueda de informacion encontre esta etiqueta que permite alinear de forma horizontal y vertical al mismo tiempo */
+    place-items: center;
+}
+.grid-items img{
+    width: 240px;
 }
 button{
-    width: 40vh;
+    width: 25vw;
+    background-color: #25527b;
+    color: white;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
 }
