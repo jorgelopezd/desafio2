@@ -6,42 +6,48 @@ nav{
     grid-area: header;
     width: 100vw;
     height: 10vh;
-    background-color: aqua;
+    background-color: #25527b;
 
 }
 nav{
     display: flex;
+    align-items: center;
     justify-content: center;
+    color: white;
 }
-h1{
-    align-self: center;
-}
-aside{
-    grid-area: aside ;
-    height: 90vh;
-    width: 20vw;
-    display: flex;
-    grid-template-columns: 30vh;
-}
-.productus{
-    grid-area: products;
-    display: flex;
-}
-.categorias{
-    display: flex;
-    justify-content: center;
-    
-}
-footer{
-    grid-area: footer;
-    display: flex;
-    justify-content: center;
-}
-main{
+.grid-container{
     display: grid;
     grid-template-areas: 
     "nav nav"
-    "aside products"
+    "aside section"
     "footer footer"
     ;
+}
+aside{
+    grid-area: aside;
+    height: 80vh;
+    width: 20vw;
+    background-color: #e7e7e7;
+}
+.item{
+    display: flex;
+    margin: 20px;
+}
+aside h1{
+    margin: 20px;
+}
+section{
+    grid-area: section;
+    height: 80vh;
+    width: 80vw;
+}
+.grid-products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+.grid-items{
+    display: grid;
+}
+button{
+    width: 40vh;
 }
